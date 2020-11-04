@@ -18,12 +18,12 @@ function makeGrid(height, width) {
     //removes any already existing cells 
     document.querySelectorAll('tr').forEach(element  => element.remove(element));
     
-    let tbl= document.getElementById('pixelCanvas');
+    let tableCanvas= document.getElementById('pixelCanvas');
     
         
     for (h=1; h<=height; h++){    
-        let tblRow= document.createElement('tr');
-        let row= tbl.appendChild(tblRow);
+        let tableRow= document.createElement('tr');
+        let row= tableCanvas.appendChild(tableRow);
         for (w=1; w<=width; w++){
             let widthColumn= document.createElement('td');
             row.appendChild(widthColumn);
